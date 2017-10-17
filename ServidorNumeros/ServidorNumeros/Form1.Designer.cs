@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.IPText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.PuertoText = new System.Windows.Forms.TextBox();
             this.BotonConectar = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -50,6 +54,7 @@
             this.IPText.Name = "IPText";
             this.IPText.Size = new System.Drawing.Size(100, 20);
             this.IPText.TabIndex = 1;
+            this.IPText.Text = "127.0.0.1";
             // 
             // label2
             // 
@@ -66,6 +71,7 @@
             this.PuertoText.Name = "PuertoText";
             this.PuertoText.Size = new System.Drawing.Size(100, 20);
             this.PuertoText.TabIndex = 1;
+            this.PuertoText.Text = "6400";
             // 
             // BotonConectar
             // 
@@ -77,11 +83,34 @@
             this.BotonConectar.UseVisualStyleBackColor = true;
             this.BotonConectar.Click += new System.EventHandler(this.BotonConectar_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(15, 88);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(376, 290);
+            this.listBox1.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Recibidos";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 422);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.BotonConectar);
             this.Controls.Add(this.PuertoText);
             this.Controls.Add(this.label2);
@@ -102,6 +131,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox PuertoText;
         private System.Windows.Forms.Button BotonConectar;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

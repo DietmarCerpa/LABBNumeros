@@ -8,3 +8,13 @@ C:\Users\jcerpa\source\repos\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorN
 C:\Users\jcerpa\source\repos\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorNumeros.csproj.CoreCompileInputs.cache
 C:\Users\jcerpa\source\repos\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorNumeros.exe
 C:\Users\jcerpa\source\repos\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorNumeros.pdb
+C:\Users\jcerpa\source\repos\LABBNumeros\ServidorNumeros\ServidorNumeros\bin\Debug\ServidorNumeros.exe.config
+C:\Users\jcerpa\source\repos\LABBNumeros\ServidorNumeros\ServidorNumeros\bin\Debug\ServidorNumeros.exe
+C:\Users\jcerpa\source\repos\LABBNumeros\ServidorNumeros\ServidorNumeros\bin\Debug\ServidorNumeros.pdb
+C:\Users\jcerpa\source\repos\LABBNumeros\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorNumeros.csprojResolveAssemblyReference.cache
+C:\Users\jcerpa\source\repos\LABBNumeros\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorNumeros.Form1.resources
+C:\Users\jcerpa\source\repos\LABBNumeros\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorNumeros.Properties.Resources.resources
+C:\Users\jcerpa\source\repos\LABBNumeros\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorNumeros.csproj.GenerateResource.Cache
+C:\Users\jcerpa\source\repos\LABBNumeros\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorNumeros.csproj.CoreCompileInputs.cache
+C:\Users\jcerpa\source\repos\LABBNumeros\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorNumeros.exe
+C:\Users\jcerpa\source\repos\LABBNumeros\ServidorNumeros\ServidorNumeros\obj\Debug\ServidorNumeros.pdb
