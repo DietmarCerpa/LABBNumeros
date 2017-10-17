@@ -1,0 +1,10 @@
+C:\Users\jcerpa\source\repos\GuiCajas\GuiCajas\bin\Debug\GuiCajas.exe.config
+C:\Users\jcerpa\source\repos\GuiCajas\GuiCajas\bin\Debug\GuiCajas.exe
+C:\Users\jcerpa\source\repos\GuiCajas\GuiCajas\bin\Debug\GuiCajas.pdb
+C:\Users\jcerpa\source\repos\GuiCajas\GuiCajas\obj\Debug\GuiCajas.csprojResolveAssemblyReference.cache
+C:\Users\jcerpa\source\repos\GuiCajas\GuiCajas\obj\Debug\GuiCajas.Form1.resources
+C:\Users\jcerpa\source\repos\GuiCajas\GuiCajas\obj\Debug\GuiCajas.Properties.Resources.resources
+C:\Users\jcerpa\source\repos\GuiCajas\GuiCajas\obj\Debug\GuiCajas.csproj.GenerateResource.Cache
+C:\Users\jcerpa\source\repos\GuiCajas\GuiCajas\obj\Debug\GuiCajas.csproj.CoreCompileInputs.cache
+C:\Users\jcerpa\source\repos\GuiCajas\GuiCajas\obj\Debug\GuiCajas.exe
+C:\Users\jcerpa\source\repos\GuiCajas\GuiCajas\obj\Debug\GuiCajas.pdb
