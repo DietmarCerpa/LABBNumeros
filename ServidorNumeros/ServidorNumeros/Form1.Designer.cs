@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.IPText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -35,6 +36,7 @@
             this.BotonConectar = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -52,6 +54,7 @@
             this.IPText.Name = "IPText";
             this.IPText.Size = new System.Drawing.Size(100, 20);
             this.IPText.TabIndex = 1;
+            this.IPText.Text = "127.0.0.1";
             // 
             // label2
             // 
@@ -68,6 +71,7 @@
             this.PuertoText.Name = "PuertoText";
             this.PuertoText.Size = new System.Drawing.Size(100, 20);
             this.PuertoText.TabIndex = 1;
+            this.PuertoText.Text = "6400";
             // 
             // BotonConectar
             // 
@@ -95,6 +99,10 @@
             this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Recibidos";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -125,6 +133,7 @@
         private System.Windows.Forms.Button BotonConectar;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

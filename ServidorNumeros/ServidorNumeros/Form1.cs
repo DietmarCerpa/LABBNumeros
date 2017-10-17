@@ -26,10 +26,9 @@ namespace ServidorNumeros
         int MaxHosts = 10, DimensionVector = 0;
 
         bool ConexionEstablecida = false;
-     
-        Socket Leer, Conexion;
 
-      
+
+        Socket Leer, Conexion;
 
         IPEndPoint Conectar;
         
@@ -44,31 +43,33 @@ namespace ServidorNumeros
             //CampoIP = IPText.Text;
 
             //CampoPuerto = PuertoText.Text;
-            
-
-            Leer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            Leer.Listen(MaxHosts);
-
-            if (ConexionEstablecida == true)
-            {
-
-                DimensionVector = Conexion.Receive(TramaRecibida, 0, TramaRecibida.Length, 0);
-
-                Array.Resize(ref TramaRecibida, DimensionVector);
-
-                DatosRecibidos = Encoding.Default.GetString(TramaRecibida);
-            }
-            
         }
 
         private void BotonConectar_Click(object sender, EventArgs e)
         {
+            Leer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+            Conectar = new IPEndPoint(IPAddress.Parse(IPText.Text), Int32.Parse(PuertoText.Text));
+
+            Leer.Bind(Conectar);
+
+            Leer.Listen(10);
+
+            Conexion = Leer.Accept();
+
+            listBox1.Items.Add("CONEXION ESTABLECIDA    " + DateTime.Now);
+
+            ConexionEstablecida = true;
+
+            //timer1.Start();
+
             try
             {
-                Conectar = new IPEndPoint(IPAddress.Parse(IPText.Text), Int32.Parse(PuertoText.Text));
-                Leer.Bind(Conectar);
-                Conexion = Leer.Accept();
-                ConexionEstablecida = true;
+             
+
+                //ConexionEstablecida = true;
+
+                //timer1.Start();
             }
             catch
             {
@@ -76,7 +77,24 @@ namespace ServidorNumeros
             }
         }
 
-        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            int cuantos = Conexion.Available;
+
+            DimensionVector = Conexion.Receive(TramaRecibida, 0, TramaRecibida.Length, 0);
+
+            Array.Resize(ref TramaRecibida, DimensionVector);
+
+            if (TramaRecibida != null)
+            {
+                DatosRecibidos = Encoding.Default.GetString(TramaRecibida);
+                listBox1.Items.Add(DatosRecibidos);
+            }
+                     
+           
+        }
+
     }
 }
 
@@ -129,24 +147,5 @@ array_size = conexion.Receive(recibir_info, 0, recibir_info.Length, 0);
             Console.WriteLine("La Info recibida es : " + data);
             Console.ReadKey();
  * 
- */
-/*
- * Socket listen = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-           IPEndPoint connect = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 6500);
-
-           listen.Connect(connect);
-
-           byte[] enviar_info = new byte[100];
-           string data;
-
-           Console.WriteLine("ingresa la info a Enviar: ");
-
-           data = Console.ReadLine();
-
-           enviar_info = Encoding.Default.GetBytes(data);
-
-           listen.Send(enviar_info);
-
-           Console.ReadKey();
  */
 

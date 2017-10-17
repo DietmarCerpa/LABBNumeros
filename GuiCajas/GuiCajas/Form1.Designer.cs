@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.IPServidor = new System.Windows.Forms.TextBox();
             this.PuertoServidor = new System.Windows.Forms.TextBox();
             this.BotonConectar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Mensaje = new System.Windows.Forms.TextBox();
             this.BotonEnviar = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -64,6 +66,7 @@
             this.IPServidor.Name = "IPServidor";
             this.IPServidor.Size = new System.Drawing.Size(100, 20);
             this.IPServidor.TabIndex = 2;
+            this.IPServidor.Text = "127.0.0.1";
             // 
             // PuertoServidor
             // 
@@ -71,6 +74,7 @@
             this.PuertoServidor.Name = "PuertoServidor";
             this.PuertoServidor.Size = new System.Drawing.Size(100, 20);
             this.PuertoServidor.TabIndex = 3;
+            this.PuertoServidor.Text = "6400";
             // 
             // BotonConectar
             // 
@@ -80,6 +84,7 @@
             this.BotonConectar.TabIndex = 4;
             this.BotonConectar.Text = "Conectar";
             this.BotonConectar.UseVisualStyleBackColor = true;
+            this.BotonConectar.Click += new System.EventHandler(this.BotonConectar_Click);
             // 
             // label3
             // 
@@ -90,12 +95,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Mensaje";
             // 
-            // textBox1
+            // Mensaje
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(373, 20);
-            this.textBox1.TabIndex = 6;
+            this.Mensaje.Location = new System.Drawing.Point(83, 75);
+            this.Mensaje.Name = "Mensaje";
+            this.Mensaje.Size = new System.Drawing.Size(373, 20);
+            this.Mensaje.TabIndex = 6;
             // 
             // BotonEnviar
             // 
@@ -105,6 +110,7 @@
             this.BotonEnviar.TabIndex = 7;
             this.BotonEnviar.Text = "Enviar";
             this.BotonEnviar.UseVisualStyleBackColor = true;
+            this.BotonEnviar.Click += new System.EventHandler(this.BotonEnviar_Click);
             // 
             // listBox1
             // 
@@ -123,6 +129,10 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Historial";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,7 +141,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.BotonEnviar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Mensaje);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.BotonConectar);
             this.Controls.Add(this.PuertoServidor);
@@ -154,10 +164,11 @@
         private System.Windows.Forms.TextBox PuertoServidor;
         private System.Windows.Forms.Button BotonConectar;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Mensaje;
         private System.Windows.Forms.Button BotonEnviar;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
