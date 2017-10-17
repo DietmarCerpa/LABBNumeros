@@ -35,7 +35,9 @@
             this.BotonConectar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BotonEnviar = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -95,21 +97,40 @@
             this.textBox1.Size = new System.Drawing.Size(373, 20);
             this.textBox1.TabIndex = 6;
             // 
-            // button1
+            // BotonEnviar
             // 
-            this.button1.Location = new System.Drawing.Point(479, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 22);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BotonEnviar.Location = new System.Drawing.Point(462, 73);
+            this.BotonEnviar.Name = "BotonEnviar";
+            this.BotonEnviar.Size = new System.Drawing.Size(92, 22);
+            this.BotonEnviar.TabIndex = 7;
+            this.BotonEnviar.Text = "Enviar";
+            this.BotonEnviar.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(16, 137);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(529, 95);
+            this.listBox1.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 118);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Historial";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(566, 262);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.BotonEnviar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.BotonConectar);
@@ -119,6 +140,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "GUICajas";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,7 +155,9 @@
         private System.Windows.Forms.Button BotonConectar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BotonEnviar;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label4;
     }
 }
 

@@ -28,6 +28,9 @@ namespace ServidorNumeros
         bool ConexionEstablecida = false;
      
         Socket Leer, Conexion;
+
+      
+
         IPEndPoint Conectar;
         
 
@@ -126,5 +129,24 @@ array_size = conexion.Receive(recibir_info, 0, recibir_info.Length, 0);
             Console.WriteLine("La Info recibida es : " + data);
             Console.ReadKey();
  * 
+ */
+/*
+ * Socket listen = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+           IPEndPoint connect = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 6500);
+
+           listen.Connect(connect);
+
+           byte[] enviar_info = new byte[100];
+           string data;
+
+           Console.WriteLine("ingresa la info a Enviar: ");
+
+           data = Console.ReadLine();
+
+           enviar_info = Encoding.Default.GetBytes(data);
+
+           listen.Send(enviar_info);
+
+           Console.ReadKey();
  */
 
